@@ -41,9 +41,6 @@ public class UserService {
         userDTO.setId(user.getId());
         return userDTO;
     }
-    private List<User> getAllUsers() {
-        return userProvider.getAllUsers();
-    }
 
     private List<User> getLondonUsers() {
         return userProvider.getLondonUsers();
