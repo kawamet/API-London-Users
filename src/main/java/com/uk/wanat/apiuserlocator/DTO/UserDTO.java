@@ -1,4 +1,4 @@
-package com.uk.wanat.apiuserlocator.model;
+package com.uk.wanat.apiuserlocator.DTO;
 
 
 import lombok.Data;

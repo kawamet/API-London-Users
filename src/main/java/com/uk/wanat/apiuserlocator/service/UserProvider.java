@@ -1,4 +1,4 @@
-package com.uk.wanat.apiuserlocator;
+package com.uk.wanat.apiuserlocator.service;
 
 
 import com.uk.wanat.apiuserlocator.model.User;
@@ -27,8 +27,7 @@ public class UserProvider {
     private List<User> getData(String URL) {
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<List<User>> rateResponse =
-                restTemplate.exchange(URL, HttpMethod.GET, null, new ParameterizedTypeReference<List<User>>() {
-                        });
+                restTemplate.exchange(URL, HttpMethod.GET, null, new ParameterizedTypeReference<List<User>>() {});
         return rateResponse.getBody();
     }
 
