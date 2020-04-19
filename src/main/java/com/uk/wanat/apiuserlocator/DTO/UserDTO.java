@@ -4,7 +4,7 @@ package com.uk.wanat.apiuserlocator.DTO;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
+
 @NoArgsConstructor
 public class UserDTO {
     private Integer id;

@@ -3,8 +3,6 @@ package com.uk.wanat.apiuserlocator.service;
 
 import com.uk.wanat.apiuserlocator.handler.RestTemplateResponseErrorHandler;
 import com.uk.wanat.apiuserlocator.model.User;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;

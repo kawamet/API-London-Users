@@ -9,8 +9,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.*;
-import org.springframework.http.client.ClientHttpRequestFactory;
-import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
@@ -111,14 +109,5 @@ public class RestTemplateBasicLiveTest {
                 .includes(MediaType.APPLICATION_JSON));
     }
 
-
-    // Simply setting restTemplate timeout using ClientHttpRequestFactory
-
-    ClientHttpRequestFactory getClientHttpRequestFactory() {
-        final int timeout = 5;
-        final HttpComponentsClientHttpRequestFactory clientHttpRequestFactory = new HttpComponentsClientHttpRequestFactory();
-        clientHttpRequestFactory.setConnectTimeout(timeout * 1000);
-        return clientHttpRequestFactory;
-    }
 
 }
