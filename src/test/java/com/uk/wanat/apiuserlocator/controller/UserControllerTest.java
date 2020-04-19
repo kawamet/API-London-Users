@@ -4,8 +4,6 @@ import com.uk.wanat.apiuserlocator.DTO.UserDTO;
 import com.uk.wanat.apiuserlocator.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -26,8 +24,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringRunner.class)
 @WebMvcTest(UserController.class)
 class UserControllerTest {
-
-    private static final Logger logger = LoggerFactory.getLogger(UserControllerTest.class);
 
     @Autowired
     private MockMvc mvc;

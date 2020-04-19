@@ -22,8 +22,6 @@ public class UserProvider {
     public static final String ULR_LODNON = "https://bpdts-test-app.herokuapp.com/city/London/users";
     private RestTemplate restTemplate;
 
-    private static final Logger logger = LoggerFactory.getLogger(UserProvider.class);
-
     public UserProvider(RestTemplateBuilder restTemplateBuilder) {
         restTemplate = restTemplateBuilder
                 .errorHandler(new RestTemplateResponseErrorHandler())
