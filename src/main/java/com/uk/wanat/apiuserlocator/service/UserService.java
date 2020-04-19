@@ -3,6 +3,8 @@ package com.uk.wanat.apiuserlocator.service;
 import com.uk.wanat.apiuserlocator.model.User;
 import com.uk.wanat.apiuserlocator.DTO.UserDTO;
 import org.modelmapper.ModelMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +17,8 @@ public class UserService {
 
     public static final double LONDON_LAT = 51.50853;
     public static final double LONDON_LONG = -0.12574;
+
+    private static final Logger logger = LoggerFactory.getLogger(UserService.class);
 
     private UserProvider userProvider;
     private ModelMapper modelMapper;
